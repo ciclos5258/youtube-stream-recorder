@@ -15,7 +15,7 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 RECORDINGS_DIR = Path("records")
 CHECK_INTERVAL = 50
-YTDLP_PATH = "yt-dlp"
+YTDLP_PATH = "/root/.local/bin/yt-dlp"
 
 if not all([CHAT_ID, CHANNEL_URL, TELEGRAM_BOT_TOKEN]):
     raise RuntimeError("Missing .env variables")
